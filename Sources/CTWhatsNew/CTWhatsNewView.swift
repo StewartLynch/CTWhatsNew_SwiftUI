@@ -25,7 +25,7 @@ public struct CTWhatsNewView: View {
     
     @Environment(\.presentationMode) var presentationMode
     var ctWhatsNew:CTWhatsNew
-    var body: some View {
+    public var body: some View {
         
         NavigationView {
             VStack(alignment: .leading) {
