@@ -53,7 +53,7 @@ public struct CTWhatsNewView: View {
                 .onAppear {
                     self.resetValues()
             }
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
     
     func getTitle() -> String {
