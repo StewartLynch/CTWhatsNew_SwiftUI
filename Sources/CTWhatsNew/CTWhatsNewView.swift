@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-public struct CTWhatsNewView: View {
+struct CTWhatsNewView: View {
     public init(ctWhatsNew:CTWhatsNew) {
         self.ctWhatsNew = ctWhatsNew
         if let navBarColor = ctWhatsNew.navBarBackgroundColor {
@@ -25,7 +25,7 @@ public struct CTWhatsNewView: View {
     
     @Environment(\.presentationMode) var presentationMode
     var ctWhatsNew:CTWhatsNew
-    public var body: some View {
+    var body: some View {
         
         NavigationView {
             VStack(alignment: .leading) {
