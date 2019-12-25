@@ -67,7 +67,7 @@ let ctWhatsNew = CTWhatsNew(title: "What's New and Different",
 
 ###### e) - Create CTWhatsNewItems
 
-The next step is to create a **CTWhatsNewItem** for every update that you wish to display.  To do this you can  use newItem function on your `whatsNew` instance and compine it with the static `CTWhatsNewItem` function.  You could, of course create a number of `CTWhatsNewItems` individually and then use the `whatsNew` function to add them all to your instance later, but in this example, I am showing you the combination of both.
+The next step is to create a **CTWhatsNewItem** for every update that you wish to display.  To do this you can  use newItem function on your `whatsNew` instance and combine it with the static `CTWhatsNewItem` function.  You could, of course create a number of `CTWhatsNewItems` individually and then use the `whatsNew` function to add them all to your instance later, but in this example, I am showing you the combination of both.
 
 **Note**: The order in which you add the CTWhatsNew item will be reversed on display.  So you can add your most recent changes at the end, and they will be displayed first.
 
