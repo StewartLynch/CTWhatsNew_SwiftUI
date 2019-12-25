@@ -9,7 +9,7 @@
 import SwiftUI
 
 public struct CTWhatsNewView: View {
-    init(ctWhatsNew:CTWhatsNew) {
+    public init(ctWhatsNew:CTWhatsNew) {
         self.ctWhatsNew = ctWhatsNew
         if let navBarColor = ctWhatsNew.navBarBackgroundColor {
             UINavigationBar.appearance().barTintColor = navBarColor
