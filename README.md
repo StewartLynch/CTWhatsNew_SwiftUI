@@ -12,7 +12,7 @@ A template for displaying new features (and past feature additions) to your app.
 
 See overview along with installation and setup instructions at:
 
-*Coming soon.....*
+https://www.youtube.com/watch?v=KE_E6PArevY
 
 ### Installation
 
