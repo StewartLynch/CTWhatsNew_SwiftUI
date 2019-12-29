@@ -9,7 +9,7 @@
 import SwiftUI
 
 public class CTWhatsNew {
-
+    
     public var title:String
     public var intro:String
     public var items:[CTWhatsNewItem] = []
@@ -25,22 +25,16 @@ public class CTWhatsNew {
     public func newItem(_ ctWhatsNewItem:CTWhatsNewItem) {
         items.append(ctWhatsNewItem)
     }
-   
-    public func shouldShowWhatsNew(isOnDemand:Bool = false) -> Bool {
-        let appBuild:String = Bundle.main.infoDictionary!["CFBundleVersion"] as! String
-               let appVersion:String = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
-               let verString = "\(appVersion) Build:\(appBuild)"
-               let defaults = UserDefaults.standard
-               if !isOnDemand {
-                   if defaults.string(forKey: "verString") != verString {
-                       return true
-                   } else {
-                    return false
-                }
-               } else {
-                  return true
-               }
-    }
     
+    public func shouldShowWhatsNew() -> Bool {
+        let appBuild:String = Bundle.main.infoDictionary!["CFBundleVersion"] as! String
+        let appVersion:String = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
+        let verString = "\(appVersion) Build:\(appBuild)"
+        let defaults = UserDefaults.standard
+        if defaults.string(forKey: "verString") != verString {
+            return true
+        } else {
+            return false
+        }
+    }
 }
-
