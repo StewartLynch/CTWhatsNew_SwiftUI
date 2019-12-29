@@ -165,9 +165,9 @@ On your parent view, you can use
 
 ###### On Demand presentation
 
-If you wish to display whats new on demand, you can assign it to an action on a button.  If this is the case, add `isOnDemand: true` as the final parameter of the `shouldShowWhatsNew` function.
+If you wish to display whats new on demand, you can assign it to an action on a button.  If this is the case, simply set the value of the showCTWhatsNew variable to true.
 ```swift
-self.showCTWhatsNew = self.ctWhatsNew.shouldShowWhatsNew(isOnDemand: true)
+self.showCTWhatsNew = true
 ```
 A sample implementation could look something like this.
 
